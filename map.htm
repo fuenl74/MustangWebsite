@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+       Final Project
+       Author: Luis Fuentes
+       Date:   12/9/2016
+
+       Filename:         website.htm
+
+    -->
+
+    <meta charset="UTF-8" />
+    <title>Shelby GT350R</title>
+    <link rel="shortcut icon" href="icon.ico">
+    <script src="modernizr-1.5.js"></script>
+    <link href="website.css" rel="stylesheet" />
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+
+        // Create a map object from the Google Maps API at the latitude and longitude of the parameters
+        // Draw that map as a ROADMAP
+
+        function drawMap(lat, lng)
+        {
+            var myCenter = new google.maps.LatLng(lat, lng);
+
+            var mapProperties =
+            {
+                center: myCenter,
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map( document.getElementById("googleMap"), mapProperties );
+
+            var marker = new google.maps.Marker(
+            {
+                position: myCenter,
+            } );
+
+            marker.setMap(map);
+
+            // Zoom to level 16 when clicking on marker
+
+            google.maps.event.addListener(marker, "click", function ()
+            {
+                map.setZoom(15);
+                map.setCenter( marker.getPosition() );
+            } );
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        
+        <nav class="menu">
+            <ul>
+                <li id="fi"><a href="website.htm">HOME</a></li>
+                <li id="spec"><a href="specifications.html">SPECIFICATIONS</a></li>
+                <li><a href="gallery.htm">GALLERY</a></li>
+                <li><a href="order.htm">ORDER</a></li>
+                <li id="fo"><a href="map.htm">WHERE TO FIND US</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Ford Shelby GT350R Mustang</h1>
+
+        </article>
+        
+    </header>
+
+    <section id="map1">
+        Here there are some of our locations on long island
+    </section>
+
+    <p id="map">
+        <button onmouseover="drawMap(40.8534, -73.4115)">Huntington Station</button>
+        <button onmouseover="drawMap(40.7251, -73.2454)">Bay Shore</button>
+        <button onmouseover="drawMap(40.7660, -73.0193)">Patchogue</button>
+        <button onmouseover="drawMap(40.7684, -73.5251)">Hicksville</button>
+        <button onmouseover="drawMap(40.8262, -73.5021)">Syosset</button>
+        <button onmouseover="drawMap(40.7282, -73.7949)">Queens</button>
+    </p>
+
+    <div id="googleMap" style="margin-left:18em; margin-top:2em; width:650px; height:475px;"></div>
+
+
+    <footer>
+        <p>
+            <script type="text/javascript">
+            var today = new Date();
+            document.write( "&copy;&nbsp;" );
+            document.write( today.getFullYear() );
+            document.write(", 1 American Rd. Dearborn MI 48126 ")
+            </script>
+        </p>
+
+    </footer>
+
+</body>
+
+</html> 
