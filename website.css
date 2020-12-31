@@ -21,7 +21,7 @@ body * {
    list-style: none;
    margin: 0px;
    padding: 0px;
-   text-decoration: none;
+   text-decoration: none; 
 
 }
 
@@ -33,7 +33,7 @@ body {
    font-size: 16px;
    margin: 0px auto;
    position: relative;
-   background: url("2016.jpg")
+   background: url("images/2016.jpg")
 }
 
 /* Header styles */
@@ -77,18 +77,18 @@ header nav li a {
    -moz-border-radius: 50px;
    -webkit-border-radius: 50px;
    border-radius: 50px;
-   background: url("milk.jpg");
+   background: url("images/milk.jpg");
 }
 
 header nav li a:hover {
-    background: url("jona.jpg");
+    background: url("images/jona.jpg");
 }
 
 header article {
    float: left;
    font-size:80%;
    width: 100%;
-   background: url("back2.jpg");
+   background: url("images/back2.jpg");
 }
 
 
@@ -120,7 +120,7 @@ header article p{
 
 #accordion{ 
    clear: left;
-   background: url("Rust.jpg");
+   background: url("images/Rust.jpg");
 }
 
 #accordion h3
@@ -227,7 +227,7 @@ br {
 	clear: left;
 	padding: 0 180px;
     position: relative;
-    background: url("Blue5.jpg");
+    background: url("images/Blue5.jpg");
     color: white;
 }
 #order h1 {
@@ -288,7 +288,7 @@ table tr td
 table
 {
 
-    background:url("table.jpg");
+    background:url("images/table.jpg");
     width: 100%;
     margin-top: 50px;
     color: white;
@@ -350,7 +350,7 @@ aside
 
 #map button:hover
 {
-    background: url("jona.jpg");
+    background: url("images/jona.jpg");
 }
 
 #map button
@@ -361,7 +361,7 @@ aside
     padding: 0.5em;
     font-family: 'Times New Roman', Times, serif;
     font-size: 150%;
-    background: url("milk.jpg");
+    background: url("images/milk.jpg");
     color: white;  
    -moz-border-radius: 50px;
    -webkit-border-radius: 50px;
