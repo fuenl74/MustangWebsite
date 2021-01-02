@@ -376,7 +376,10 @@ aside
     font-size: 150%;
     padding-bottom: 1em;
 }
-
+.map1{
+	margin:auto; 
+	width: 80%;
+}
 #fi
 {
     margin-left: 4em;
@@ -399,4 +402,21 @@ aside
 #slideShow
 {
     margin:0;
+}
+
+.location ul li {
+	margin: auto;
+	padding: 10px;
+	padding-right: 3%;
+	padding-left: 3%;
+	margin-right: 2%;
+	list-style-type: none;
+	display: inline;
+	background-color: rgba(0,18,255,0.70);
+	color: white;
+	border-radius: 16px;
+}
+.location ul li:hover {	
+	background-color: rgba(100, 100, 100,0.80);
+
 }
