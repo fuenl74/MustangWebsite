@@ -419,4 +419,7 @@ aside
 .location ul li:hover {	
 	background-color: rgba(100, 100, 100,0.80);
 
+} 
+tr td{
+	text-align: center;
 }
