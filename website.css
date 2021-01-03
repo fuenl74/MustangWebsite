@@ -106,10 +106,9 @@ header h1 {
 header article p{
    font-size: 2em;
    font-family: 'Bell MT';
-   width: 95%;
-   color: cornflowerblue;
-   float: right;
-   margin-right: 20px;
+   width: 85%;
+   color: cornflowerblue; 
+   margin: auto;
 }
 
     header article p a {
@@ -122,6 +121,8 @@ header article p{
 #accordion{ 
    clear: left;
    background: url("images/Rust.jpg");
+   margin: auto;
+   width: 90%;
 }
 
 #accordion h3
@@ -157,7 +158,8 @@ header article p{
    margin-left: 10px;
    margin-bottom: 5px;
    padding-top: 5px;
-   width: 100%;
+   width: 90%;
+   margin: auto;
    font-family: 'Bell MT';
 
 }
@@ -169,7 +171,8 @@ header article p{
    margin-left: 10px;
    margin-bottom: 5px;
    padding-top: 5px;
-   width: 100%;
+   width: 90%;
+   margin: auto;
    font-family: 'Bell MT';
 }
 
