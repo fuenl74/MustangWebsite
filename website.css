@@ -31,7 +31,7 @@ body {
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
    font-size: 16px;
-   margin: 0px auto;
+   margin: auto;
    position: relative;
    background: url("images/2016.jpg")
 }
@@ -50,10 +50,11 @@ header a
 }
 /*Navigation list styles */
 
-header nav {
-   float: left;
-   width: 100%;
-   margin: 10px auto 10px -7%;
+header nav, .location {
+ 
+   width: 90%;
+   margin: auto;
+   /*margin: 10px auto 10px -7%;  float: left;*/
 }
 
 header nav li {
@@ -88,7 +89,7 @@ header article {
    float: left;
    font-size:80%;
    width: 100%;
-   background: url("images/back2.jpg");
+   background: rgba(50, 50, 50, 0.7); 
 }
 
 
@@ -403,7 +404,10 @@ aside
 {
     margin:0;
 }
-
+.location ul{
+	margin: auto;
+	width: 90%;
+}
 .location ul li {
 	margin: auto;
 	padding: 10px;
@@ -414,7 +418,7 @@ aside
 	display: inline;
 	background-color: rgba(0,18,255,0.70);
 	color: white;
-	border-radius: 16px;
+	border-radius: 7px;
 }
 .location ul li:hover {	
 	background-color: rgba(100, 100, 100,0.80);
@@ -422,4 +426,10 @@ aside
 } 
 tr td{
 	text-align: center;
+}
+aside a, .mBody{
+	color: white;
+}
+aside a:hover{
+	color: blue;
 }
