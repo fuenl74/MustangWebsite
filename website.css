@@ -71,18 +71,18 @@ header nav li a {
    height: 50px;
    line-height: 50px;
    text-align: center;
-   color: azure;
+   color: black;
    font-weight: bolder;
    font-family: 'Times New Roman', Times, serif;
    font-size: 1.4em;
-   -moz-border-radius: 50px;
-   -webkit-border-radius: 50px;
-   border-radius: 50px;
-   background: url("images/milk.jpg");
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background: rgb(250, 250, 250);
 }
 
 header nav li a:hover {
-    background: url("images/jona.jpg");
+    background: rgba(250, 250, 250, 0.6);
 }
 
 header article {
